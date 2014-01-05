@@ -16,7 +16,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "roro": "0.0.1",
+    "roro": "0.1.0",
     "event-stream": "~3.0.20"
   },
   "main": "index.js",
