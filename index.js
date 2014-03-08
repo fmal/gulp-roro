@@ -1,10 +1,14 @@
 'use strict';
 
 var es = require('event-stream'),
-    roro = require('roro');
+    roro = require('roro'),
+    _ = require('lodash');
 
 module.exports = function(options) {
-    options = options || {};
+    options = _.extend({
+        browsers: ['last 2 versions', 'android 4'],
+        baseFontsize: 16
+    }, options || {});
 
     function modifyFile(file, cb) {
         try {
